@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style01.css">
+<style type="text/css">
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+table, th, td {
+	border: 1px solid rgb(128, 255, 0);
+	border-collapse: collapse;
+	margin: 0px auto;
+	padding: 5px;
+	text-align: left;
+}
+#t02 tr:nth-child(even) {
+  background-color: hotpink;
+}
+#t02 tr:nth-child(odd) {
+  background-color: MediumSeaGreen;
+}
+</style>
+<title>테이블 태그</title>
+</head>
+<body>
+
+<table style="width:600px">
+<tr><td>방이름</td><td>대상</td><td>크기</td><td>가격</td></tr>
+<tr><td>가가가</td><td>여성</td><td>4</td><td>1인 2만 원</td></tr>
+<tr><td>나나나</td><td>동성</td><td>4</td><td>1인 2만 원</td></tr>
+<tr><td>다다다</td><td>가족</td><td>4</td><td>1인 2만 원</td></tr>
+<tr><td>라라라</td><td>아무나</td><td>2</td><td>1인 2만 원</td></tr>
+</table>
+<hr>
+<table style="width:600px">
+<tr><td>방이름</td><td>대상</td><td>크기</td><td>가격</td></tr>
+<tr><td>가가가</td><td>여성</td><td rowspan="3">4</td><td rowspan="4">1인 2만 원</td></tr>
+<tr><td rowspan="2">나나나</td><td>동성</td></tr>
+<tr><td>가족</td></tr>
+<tr><td>다다다</td><td>아무나</td><td>2</td></tr>
+</table>
+<hr>
+<table style="width:600px">
+<tr><td colspan="2">1-1</td><td>1-3</td><td>1-4</td><td>1-5</td></tr>
+<tr><td>2-1</td><td>2-2</td><td>2-3</td><td colspan="2" rowspan="3">2-4</td></tr>
+<tr><td colspan="3">3-1</td></tr>
+<tr><td>4-1</td><td>4-2</td><td>4-3</td></tr>
+<tr><td>5-1</td><td>5-2</td><td>5-3</td><td>5-4</td><td>5-5</td></tr>
+</table>
+<hr>
+<table style="width:600px">
+<col style="background-color: skyblue;">
+<col style="background-color: indigo;">
+<caption><h3>표 그리기</h3></caption>
+<tr><td colspan="2">1-1</td><td>1-3</td><td>1-4</td><td>1-5</td></tr>
+<tr><td>2-1</td><td>2-2</td><td>2-3</td><td colspan="2" rowspan="3">2-4</td></tr>
+<tr><td colspan="3">3-1</td></tr>
+<tr><td>4-1</td><td>4-2</td><td>4-3</td></tr>
+<tr><td>5-1</td><td>5-2</td><td>5-3</td><td>5-4</td><td>5-5</td></tr>
+</table>
+<hr>
+<table id="t02" style="width:600px">
+<tr style="background-color:black;color:white;"><td>방이름</td><td>대상</td><td>크기</td><td>가격</td></tr>
+<tr><td>가가가</td><td>여성</td><td rowspan="3">4</td><td rowspan="4">1인 2만 원</td></tr>
+<tr><td rowspan="2">나나나</td><td>동성</td></tr>
+<tr><td>가족</td></tr>
+<tr><td>다다다</td><td>아무나</td><td>2</td></tr>
+</table>
+<hr>
+<table style="width:600px; border-spacing: 10px;">
+<col style="background-color: skyblue;">
+<col style="background-color: indigo;">
+<caption><h3>표 그리기</h3></caption>
+<tr><td colspan="2">1-1</td><td>1-3</td><td>1-4</td><td>1-5</td></tr>
+<tr><td>2-1</td><td>2-2</td><td>2-3</td><td colspan="2" rowspan="3">2-4</td></tr>
+<tr><td colspan="3">3-1</td></tr>
+<tr><td>4-1</td><td>4-2</td><td>4-3</td></tr>
+<tr><td>5-1</td><td>5-2</td><td>5-3</td><td>5-4</td><td>5-5</td></tr>
+</table>
+
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+
+<p><a href="#"><button style="width:100%;height:100px;">top</button></a></p>
+</body>
+</html>
