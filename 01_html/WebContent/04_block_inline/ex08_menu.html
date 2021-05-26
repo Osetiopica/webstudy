@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function chi() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/img_chania.jpg";
+	}
+	function chi2() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/pic_trulli.jpg";
+	}
+	function text1() {
+		document.getElementById("t1").style.fontSize="200%";
+	}
+	function text2() {
+		document.getElementById("t1").style.fontSize="100%";
+	}
+	function show() {
+		document.getElementById("submenu").style.display = "block";
+	}
+	function hide() {
+		document.getElementById("submenu").style.display = "none";
+	}
+</script>
+<style type="text/css">
+a {
+text-decoration: none;
+color: rgb(0, 0, 0);
+padding: 20px 80px 20px 80px;
+background-color: skyblue;
+display: block;
+}
+ul {
+list-style-type:none;
+background-color: rgb(150,150,150);
+}
+li{
+float:left;
+}
+a:hover{
+background-color: blue;
+}
+</style>
+<title> menu 태그</title>
+</head>
+<body>
+<div id="wrap" style="width:100%; text-align: center;">
+
+<div onmouseover="show()" onmouseout="hide()" style="width:1000px; display: inline-block;">
+<div>
+<ul>
+<li style="width:180px"><a href="#">1</a></li>
+<li style="width:180px"><a href="#">2</a></li>
+<li style="width:180px"><a href="#">3</a></li>
+<li style="width:180px"><a href="#">4</a></li>
+<li style="width:180px"><a href="#">5</a></li>
+</ul>
+</div>
+
+<div>
+<ul id="submenu" style="display:none;">
+<li style="width:180px"><a href="#">11</a></li>
+<li style="width:180px"><a href="#">22</a></li>
+<li style="width:180px"><a href="#">33</a></li>
+<li style="width:180px"><a href="#">44</a></li>
+<li style="width:180px"><a href="#">55</a></li>
+</ul>
+</div>
+</div>
+
+<p style="clear:both;">.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+
+<p><a href="#"><button style="width:100%;height:100px;">top</button></a></p>
+</div>
+</body>
+</html>

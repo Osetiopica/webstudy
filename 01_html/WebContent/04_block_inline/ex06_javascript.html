@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function chi() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/img_chania.jpg";
+	}
+	function chi2() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/pic_trulli.jpg";
+	}
+	function text1() {
+		document.getElementById("t1").style.fontSize="200%";
+	}
+	function text2() {
+		document.getElementById("t1").style.fontSize="100%";
+	}
+</script>
+<style type="text/css">
+a {
+text-decoration: none;
+color: rgb(0, 0, 0);
+}
+</style>
+<title> js 태그</title>
+</head>
+<body>
+
+<button onclick="document.getElementById('d1').innerHTML=Date();">today</button>
+<h2 id="d1"></h2>
+
+<hr/>
+
+<button onclick="today01()">today</button>
+<h2 id="d2"></h2>
+
+<hr/>
+
+<script type="text/javascript">
+function today01() {
+	document.getElementById('d2').innerHTML=Date();
+}
+</script>
+
+<script type="text/javascript">
+function today02() {
+	document.getElementById('d3').innerHTML=Date();
+}
+</script>
+
+<button onclick="today02()">today</button>
+<h2 id="d3"></h2>
+
+<hr/>
+
+<script type="text/javascript">
+	document.getElementById('d4').innerHTML=Date();
+</script>
+<h2 id="d4"></h2>
+
+<hr/>
+
+<h2 id="d5"></h2>
+<script type="text/javascript">
+	document.getElementById('d5').innerHTML=Date();
+</script>
+
+<hr/>
+<div style="height:400px;">
+<span onmouseover="chi()" onmouseout="chi2()">
+<img id="img1" alt="change" src="https://www.w3schools.com/html/pic_trulli.jpg">
+</span>
+</div>
+
+<hr/>
+<div style="height:400px;">
+<span id="t1" onmouseover="text1()" onmouseout="text2()">
+Hello World!
+</span>
+</div>
+
+<p style="clear:both;">.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+
+<p><a href="#"><button style="width:100%;height:100px;">top</button></a></p>
+</body>
+</html>
