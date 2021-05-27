@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function chi() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/img_chania.jpg";
+	}
+	function chi2() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/pic_trulli.jpg";
+	}
+	function text1() {
+		document.getElementById("t1").style.fontSize = "200%";
+	}
+	function text2() {
+		document.getElementById("t1").style.fontSize = "100%";
+	}
+	function show() {
+		document.getElementById("submenu").style.display = "block";
+	}
+	function hide() {
+		document.getElementById("submenu").style.display = "none";
+	}
+</script>
+<style type="text/css">
+* {
+	box-sizing: border-box;
+}
+
+.n {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	padding: 20px 80px 20px 80px;
+	background-color: skyblue;
+	display: block;
+}
+
+ul {
+	list-style-type: none;
+	background-color: rgb(150, 150, 150);
+}
+
+li {
+	float: left;
+}
+
+a:hover {
+	background-color: blue;
+}
+
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style>
+<title> css 태그</title>
+</head>
+<body style="background-image: url('images/light_off.jpg'); 
+background-repeat: no-repeat; 
+/* background-repeat:repeat-x; background-repeat:repeat-y; */
+background-attachment: fixed;
+/* background-size: 100% 100%; */
+background-size: cover;
+">
+<div id="wrap" style="width:100%; text-align: center;">
+
+<div style="width:1000px; display: inline-block;">
+<header>
+  <h2>Cities</h2>
+</header>
+<section>
+  <nav>
+<div onmouseover="show()" onmouseout="hide()">
+<div>
+<ul>
+<li style="width:180px"><a href="#" class="n">1</a></li>
+<li style="width:180px"><a href="#" class="n">2</a></li>
+<li style="width:180px"><a href="#" class="n">3</a></li>
+<li style="width:180px"><a href="#" class="n">4</a></li>
+<li style="width:180px"><a href="#" class="n">5</a></li>
+</ul>
+</div>
+
+<div>
+<ul id="submenu" style="display:none;">
+<li style="width:180px"><a href="#" class="n">11</a></li>
+<li style="width:180px"><a href="#" class="n">22</a></li>
+<li style="width:180px"><a href="#" class="n">33</a></li>
+<li style="width:180px"><a href="#" class="n">44</a></li>
+<li style="width:180px"><a href="#" class="n">55</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</section>
+<article>
+
+
+
+<p style="clear:both;">.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+</article>
+<footer>
+<p><a href="#"><button style="width:1000px;height:100px;">top</button></a></p>
+</footer>
+</div>
+</div>
+</body>
+</html>

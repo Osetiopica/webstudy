@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>display</title>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+<style>
+* {
+	box-sizing: border-box;
+	outline-style: solid;
+	outline-color: lightgrey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 200px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div id="wrap" style="width:100%; text-align: center;">
+
+<div style="width:1000px; display: inline-block;">
+<header>
+  <h2>Cities</h2>
+</header>
+<section>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+</section>
+<article>
+
+<p style="font-family: 'Gugi', cursive; font-size:1em">그들의 장비와 기구는 모두 살아 있다.</p>
+<p style="font-family: 'Gugi', cursive;">ABC</p>
+
+<p style="clear:both;">.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+
+</article>
+<footer>
+<p><a href="#"><button style="width:1000px;height:100px;background-color:darkgreen">top</button></a></p>
+</footer>
+</div>
+</div>
+</body>
+</html>

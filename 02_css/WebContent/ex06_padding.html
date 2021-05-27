@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <script type="text/javascript">
+	function chi() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/img_chania.jpg";
+	}
+	function chi2() {
+		document.getElementById("img1").src = "https://www.w3schools.com/html/pic_trulli.jpg";
+	}
+	function text1() {
+		document.getElementById("t1").style.fontSize = "200%";
+	}
+	function text2() {
+		document.getElementById("t1").style.fontSize = "100%";
+	}
+	function show() {
+		document.getElementById("submenu").style.display = "block";
+	}
+	function hide() {
+		document.getElementById("submenu").style.display = "none";
+	}
+</script> -->
+<style type="text/css">
+* {
+	box-sizing: border-box;
+	border: 1px solid lightgrey;
+}
+
+.n {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	background-color: skyblue;
+	display: block; 
+}
+
+a:hover {
+	background-color: blue;
+}
+
+ul {
+	list-style-type: none;
+	background-color: rgb(150, 150, 150);
+	padding: 0px;
+}
+
+#nv {
+	height: 50px;
+}
+
+#nv ul{
+margin: 0 auto;
+}
+
+#nv .ful>li{
+float: left;
+width: 20%;
+height: 50px;
+line-height: 50px;
+position:relative;
+}
+
+#nv .ful>li:hover .sul {
+display: block;
+}
+
+#nv .ful>li a{
+display: block;
+}
+
+#nv .ful .sul{
+position: absolute; 
+top: 50px;
+left: 0px;
+width: 100%;
+display: none;
+}
+
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style>
+<title> css 태그</title>
+</head>
+<body>
+<div id="wrap" style="width:100%; text-align: center;">
+
+<div style="width:1000px; display: inline-block;">
+<header>
+  <h2>Cities</h2>
+</header>
+			<section>
+				<nav>
+					<div id="nv">
+						<!--  onmouseover="show()" onmouseout="hide()"> -->
+						<ul class="ful">
+							<li><a href="#" class="n">1</a>
+								<ul class="sul">
+									<li><a href="#" class="n">11</a></li>
+									<li><a href="#" class="n">12</a></li>
+									<li><a href="#" class="n">13</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="n">2</a>
+								<ul class="sul">
+									<li><a href="#" class="n">21</a></li>
+									<li><a href="#" class="n">22</a></li>
+									<li><a href="#" class="n">23</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="n">3</a>
+								<ul class="sul">
+									<li><a href="#" class="n">31</a></li>
+									<li><a href="#" class="n">32</a></li>
+									<li><a href="#" class="n">33</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="n">4</a>
+								<ul class="sul">
+									<li><a href="#" class="n">41</a></li>
+									<li><a href="#" class="n">42</a></li>
+									<li><a href="#" class="n">43</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="n">5</a>
+								<ul class="sul">
+									<li><a href="#" class="n">51</a></li>
+									<li><a href="#" class="n">52</a></li>
+									<li><a href="#" class="n">53</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+				</nav>
+			</section>
+			<article>
+
+<div id="d1" style="
+width: 200px;
+height: 100px;
+border-top-style: none;
+border-right-style: none;
+border-bottom-style: solid;
+border-left-style: solid;
+border-color: yellow;
+border-width: 2px;
+margin: 30px;
+padding: 30px;
+border-radius: 10px;
+background-color: lightpink;
+">1</div>
+
+<p style="clear:both;">.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+<p>.</p><p>.</p><p>.</p><p>.</p>
+</article>
+<footer>
+<p><a href="#"><button style="width:1000px;height:100px;background-color:darkgreen">top</button></a></p>
+</footer>
+</div>
+</div>
+</body>
+</html>
