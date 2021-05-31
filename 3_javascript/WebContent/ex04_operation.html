@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>title of page</title>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+<style>
+* {
+	box-sizing: border-box;
+	/* outline-style: solid;
+	outline-color: lightgrey; */
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+section li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 200px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.all-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.close-all {
+position: absolute;
+width: 200px;
+height: 49px;
+background: #3e3d3c url("images/menu_all_close.png") no-repeat 0 0;
+cursor: pointer;
+font-size: 0;
+margin:-49px 0 0 0px;
+display:none;
+z-index:2;
+}
+
+.all-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+#wrap{
+	position: relative;
+}
+
+article{
+	padding-bottom: 100px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0px;
+}
+
+</style>
+<script>
+function show_all() {
+	document.getElementsByClassName('all-content')[0].style.display = 'block';
+	document.getElementsByClassName('close-all')[0].style.display = 'block';
+}
+function hide_all(){
+    	document.getElementsByClassName('all-content')[0].style.display = 'none';
+	document.getElementsByClassName('close-all')[0].style.display = 'none';
+}
+console.log("hi!");
+</script>
+</head>
+<body>
+<div id="wrap" style="width:100%; text-align: center;">
+
+<div style="width:1000px; display: inline-block;">
+<header>
+  <h2>Name of site</h2>
+</header>
+<section>
+<ul>
+  <li>
+    <a onclick="show_all();" href="javascript:void(0)" class="dropbtn">전체 메뉴</a>
+    <span class="close-all" onclick="hide_all();">전체메뉴닫기</span>
+    <div class="all-content">
+      <a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><br/>
+	  <a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><br/>
+	  <a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><br/>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">서브 메뉴</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+</section>
+<article>
+
+<script type="text/javascript">
+var res=1;
+document.write(res+"<hr/>");
+res="hi";
+document.write(res+"<hr/>");
+
+var s1=2, s2=3;
+document.write("<h3><ul>");
+document.write("<li>"+s1+"+"+s2+"="+(s1+s2)+"</li>");
+document.write("<li>"+s1+">"+s2+"="+(s1>s2)+"</li>");
+document.write("</ul></h3>")
+
+var s1=2, s2="3";
+document.write("<h3><ul>");
+document.write("<li>"+s1+"+"+s2+"="+(s1+s2)+"</li>");
+document.write("<li>"+s1+">"+s2+"="+(s1>s2)+"</li>");
+document.write("<li>"+s1+"<"+s2+"="+(s1<s2)+"</li>");
+document.write("</ul></h3>")
+
+var s1=2, s2="2";
+document.write("<h3><ul>");
+document.write("<li>"+s1+"=="+s2+"="+(s1==s2)+"</li>");
+document.write("<li>"+s1+"==="+s2+"="+(s1===s2)+"</li>");
+document.write("</ul></h3>")
+
+document.write("<h3><ul>");
+document.write("<li>"+true+"=="+1+"="+(true==1)+"</li>");
+document.write("<li>"+true+"==="+1+"="+(true===1)+"</li>");
+document.write("</ul></h3>")
+</script>
+
+
+<div style="clear:both;"></div>
+<div style="height:1200px"></div>
+
+</article>
+<footer>
+</footer>
+<p><a href="#"><img src="images/arrow_to_top.png" style="width:50px;height:50px;position:fixed;right:20px;bottom:20px;"></a></p>
+</div>
+</div>
+</body>
+</html>
