@@ -96,6 +96,7 @@ z-index:2;
 
 #wrap{
 	position: relative;
+	min-height: 500px;
 }
 
 article{
@@ -175,43 +176,27 @@ console.log("hi!");
 </section>
 <article>
 
-<script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
-}
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
+<div id="d1" style="border: 1px hotpink solid;">
+<p align="center">hello</p>
+<p id="p1">hello</p>
+<p><span id="p2">hello</span></p>
+<hr/>
+<p id="r1">서울</p>
+<p id="r2">서울</p>
+<img id="i" alt="" src="images/light_off.jpg">
+</div>
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
-}
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
+<script type="text/javascript">
+document.getElementById("r1").innerHTML="korea";
+document.getElementById("r2").innerHTML="<h2>korea</h2>";
+document.getElementById("p1").align="left";
+document.getElementById("i").src="images/light_on.jpg";
+document.getElementById("p2").style.color="tomato";
+document.getElementById("p2").style.backgroundColor="hotpink";
 </script>
 
 <div style="clear:both;"></div>
-<div style="height:1200px"></div>
+<!-- <div style="height:1200px"></div> -->
 
 </article>
 <footer>

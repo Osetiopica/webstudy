@@ -176,38 +176,23 @@ console.log("hi!");
 <article>
 
 <script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
+var ps1=new Object();
+ps1["name"]="홍길동";
+ps1["age"]="23";
+ps1["gender"]=true;
+ps1["play"]=function(){
+	return "야구";
 }
-test01();
-var fn=function test01(){
-	document.write("펑션");
+ps1["sound"]=function(){
+	document.write("<li>"+ps1["name"]+ps1["age"]+"</li>");
 }
-fn();
-
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
-}
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
+document.write("<li>"+ps1["name"]+"</li>");
+document.write("<li>"+ps1.name+"</li>");
+document.write("<li>"+ps1["age"]+"</li>");
+document.write("<li>"+ps1["gender"]+"</li>");
+document.write("<li>"+ps1["play"]()+"</li>");
+document.write("<li>"+ps1.play()+"</li>");
+ps1["sound"]();
 </script>
 
 <div style="clear:both;"></div>

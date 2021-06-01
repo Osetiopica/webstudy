@@ -176,38 +176,22 @@ console.log("hi!");
 <article>
 
 <script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
+function pr(msg){
+	document.write(msg+"<br/>");
 }
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
-
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
-}
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
+var ps={
+		name:"둘리",
+		age:178,
+		salary:2500,
+		pay:function(){
+			var month=this.salary/12; 
+			pr("이름: "+this.name);
+			pr("월급: "+month);
 		}
-		c++;
-	}, 200);
-}
-send_go5();
+};
+pr(ps["name"]);
+pr(ps["age"]);
+pr(ps["pay"]());
 </script>
 
 <div style="clear:both;"></div>

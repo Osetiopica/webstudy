@@ -176,38 +176,29 @@ console.log("hi!");
 <article>
 
 <script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
+function Person(name,age,addr){
+	this.name=name;
+	this.age=age;
+	this.addr=addr;
 }
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
+var ps1=new Person("홍길동",11,"서울");
+var ps2=new Person("임꺽정",22,"대전");
+
+document.write(ps1["name"]+"<br/>"+ps1["age"]+"<br/>"+ps1["addr"]+"<br/>");
+document.write(ps2["name"]+"<br/>"+ps2["age"]+"<br/>"+ps2["addr"]+"<hr/>");
+
+var arr=[ps1,ps2];
+document.write(arr[0]["name"]+"<br/>");
+document.write(arr[0]["age"]+"<br/>");
+document.write(arr[0]["addr"]+"<br/>");
+document.write(arr[1]["name"]+"<hr/>");
+
+for ( var f in arr) {
+	document.write(arr[f]["name"]+"<br/>");
+	document.write(arr[f]["age"]+"<br/>");
+	document.write(arr[f]["addr"]+"<br/>");
 }
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
 </script>
 
 <div style="clear:both;"></div>

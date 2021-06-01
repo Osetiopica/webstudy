@@ -96,6 +96,7 @@ z-index:2;
 
 #wrap{
 	position: relative;
+	min-height: 500px;
 }
 
 article{
@@ -175,43 +176,34 @@ console.log("hi!");
 </section>
 <article>
 
-<script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
-}
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
+<div id="d1" style="border: 1px hotpink solid;">
+<p id="p1">한국</p>
+<p id="p2">서울</p>
+</div>
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
-}
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
+<script type="text/javascript">
+var p=document.createElement("p");
+var hr=document.createElement("hr");
+var txt=document.createTextNode("1강");
+p.appendChild(txt);
+document.body.appendChild(hr);
+document.body.appendChild(p);
+
+var p2=document.createElement("p");
+var hr2=document.createElement("hr");
+var txt2=document.createTextNode("2강");
+var d1=document.getElementById("d1");
+p2.appendChild(txt2);
+d1.appendChild(hr2);
+d1.appendChild(p2);
+
+var hr3=document.createElement("hr");
+var p2=document.getElementById("p2");
+d1.insertBefore(hr3,p2);
 </script>
 
 <div style="clear:both;"></div>
-<div style="height:1200px"></div>
+<!-- <div style="height:1200px"></div> -->
 
 </article>
 <footer>

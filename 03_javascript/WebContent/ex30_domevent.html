@@ -96,10 +96,9 @@ z-index:2;
 
 #wrap{
 	position: relative;
-}
-
-article{
-	padding-bottom: 100px;
+	min-height: 500px;
+	width:100%; 
+	text-align: center;
 }
 
 footer{
@@ -118,6 +117,18 @@ footer div{
 	padding:0 0 0 0;
 }
 
+.d{
+	width:150px;
+	height:150px;
+	padding:20px;
+	display: inline-block;
+}
+#box1{background-color: red;}
+#box2{background-color: orange;}
+#box3{background-color: green;}
+#box4{background-color: blue;}
+.btn{margin:0px auto;}
+
 </style>
 <script>
 function show_all() {
@@ -132,7 +143,7 @@ console.log("hi!");
 </script>
 </head>
 <body>
-<div id="wrap" style="width:100%; text-align: center;">
+<div id="wrap">
 
 <div style="width:1000px; display: inline-block;">
 <header>
@@ -175,44 +186,28 @@ console.log("hi!");
 </section>
 <article>
 
+<div id="d1" style="border: 1px hotpink solid; text-align: center;">
+<div style="clear: both;">
+<button class="btn" onclick="r()">r</button>
+<button class="btn" onclick="g()">g</button>
+<button class="btn" onclick="b()">b</button><br/>
+<div class="d" id="box5" style="text-align: center; line-height:100px;">none</div>
+</div>
+
 <script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
+function r(){
+	document.getElementById("box5").style.backgroundColor="red";
 }
-test01();
-var fn=function test01(){
-	document.write("펑션");
+function g(){
+	document.getElementById("box5").style.backgroundColor="green";
 }
-fn();
-
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
+function b(){
+	document.getElementById("box5").style.backgroundColor="blue";
 }
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
 </script>
-
-<div style="clear:both;"></div>
-<div style="height:1200px"></div>
-
+<div style="margin:0px auto;"></div>
+<!-- <div style="height:1200px"></div> -->
+</div>
 </article>
 <footer>
 <div></div>

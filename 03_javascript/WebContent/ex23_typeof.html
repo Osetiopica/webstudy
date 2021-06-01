@@ -176,38 +176,21 @@ console.log("hi!");
 <article>
 
 <script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
+function test(){
+	
 }
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
+document.write(typeof 'go'+"<br/>");
+document.write(typeof 'g'+"<br/>");
+document.write(typeof '3'+"<br/>");
+document.write(typeof 3+"<br/>");
+document.write(typeof Math.PI+"<br/>");
+document.write(typeof true+"<br/>");
+document.write(typeof [1,2,3]+"<br/>");
+document.write(typeof new Date()+"<br/>");
+document.write(typeof test+"<br/>");
+document.write(typeof rrrr+"<br/>");
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
-}
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
+
 </script>
 
 <div style="clear:both;"></div>

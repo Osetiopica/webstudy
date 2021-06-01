@@ -96,6 +96,7 @@ z-index:2;
 
 #wrap{
 	position: relative;
+	min-height: 500px;
 }
 
 article{
@@ -117,6 +118,17 @@ footer div{
 	height:0px;
 	padding:0 0 0 0;
 }
+
+.d{
+	width:150px;
+	height:50px;
+	padding:20px;
+	clear:both;
+}
+#box1{background-color: red;}
+#box2{background-color: orange;}
+#box3{background-color: green;}
+#box4{background-color: blue;}
 
 </style>
 <script>
@@ -175,44 +187,40 @@ console.log("hi!");
 </section>
 <article>
 
-<script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
-}
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
+<div style="clear:both;"></div>
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
+<div id="d1" style="border: 1px hotpink solid;">
+<div class="d" id="box1" onmouseover="mOver(this)" onmouseout="mOut(this)"></div>
+<div class="d" id="box2" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
+<div class="d" id="box3" onclick="test01()"></div>
+<div class="d" id="box4"></div>
+
+<script type="text/javascript">
+function mOver(obj){
+	obj.innerHTML="leave me";	
 }
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
+function mOut(obj){
+	obj.innerHTML="over me";	
 }
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
+function mDown(obj){
+	obj.innerHTML="thank you";	
 }
-send_go5();
+function mUp(obj){
+	obj.innerHTML="click me";	
+}
+function test01(){
+	document.getElementById("box3").style.backgroundColor="lightblue";	
+	document.getElementById("box3").innerHTML="lightblue";	
+}
+document.getElementById("box4").addEventListener("click", function(){
+	document.getElementById("box4").style.backgroundColor="lightpink";	
+	document.getElementById("box4").innerHTML="lightpink";	
+});
 </script>
 
 <div style="clear:both;"></div>
-<div style="height:1200px"></div>
-
+<!-- <div style="height:1200px"></div> -->
+</div>
 </article>
 <footer>
 <div></div>

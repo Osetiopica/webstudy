@@ -176,38 +176,72 @@ console.log("hi!");
 <article>
 
 <script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
-}
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
+var s1='hi';
+var s2=new String('by22ye');
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
+document.write(s1.length);
+document.write("<br/>");
+document.write(s1.charAt(1));
+document.write("<br/>");
+document.write(s1.concat("world"+s2));
+document.write("<br/>");
+document.write(s2.indexOf("y",0));
+document.write("<br/>");
+document.write(s2.indexOf("y",s2.indexOf("y",0)+1));
+document.write("<br/>");
+document.write(s2.lastIndexOf("y"));
+document.write("<br/>");
+document.write(s2.search("y"));
+document.write("<br/>");
+var s3="Apple, Banana, Coconut"
+document.write(s3.slice(0,5));
+document.write("<br/>");
+document.write(s3.slice(7,13));
+document.write("<br/>");
+document.write(s3.slice(15,22));
+document.write("<br/>");
+document.write(s3.slice(-7));
+
+document.write("<hr/>");
+
+document.write(s3.substring(0,5));
+document.write("<br/>");
+document.write(s3.substring(7,13));
+document.write("<br/>");
+document.write(s3.substring(15,22));
+document.write("<br/>");
+
+document.write("<hr/>");
+
+document.write(s3.substr(0,5));
+document.write("<br/>");
+document.write(s3.substr(7,6));
+document.write("<br/>");
+document.write(s3.substr(15,7));
+document.write("<br/>");
+document.write(s3.substr(-7));
+document.write("<br/>");
+document.write(s3.substr(-15,6));
+
+document.write("<hr/>");
+
+document.write(s3.replace("Coconut","Cupcake"));
+document.write("<br/>");
+
+document.write(s3.toUpperCase());
+document.write("<br/>");
+document.write(s3.toLowerCase());
+
+document.write("<br/>");
+var arr=s3.split(",");
+for ( var a in arr) {
+	document.write(arr[a]+"<br/>");
 }
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
+document.write("<br/>");
+
+s3="   Apple Banana    "
+document.write(s3.trim());
+
 </script>
 
 <div style="clear:both;"></div>

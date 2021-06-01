@@ -96,6 +96,7 @@ z-index:2;
 
 #wrap{
 	position: relative;
+	min-height: 500px;
 }
 
 article{
@@ -175,43 +176,33 @@ console.log("hi!");
 </section>
 <article>
 
-<script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
-}
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
+<div id="d1" style="border: 1px hotpink solid;">
+<button onclick="e_1()">시계1</button>
+<button onclick="e_2()">시계2</button>
+<button onclick="e_3()">시계3</button>
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
+<h2><span id="c1"></span></h2>
+<h2><span id="c2"></span></h2>
+<h2><span id="c3"></span></h2>
+</div>
+
+<script type="text/javascript">
+function e_1(){
+	var now=new Date();
+	document.getElementById("c1").innerHTML=now;
 }
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
+function e_2(){
+	document.getElementById("c2").innerHTML=new Date().toLocaleTimeString();
 }
-function send_go5() {
-	var c=0;
+function e_3(){
 	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
+		document.getElementById("c3").innerHTML=new Date().toLocaleTimeString();
+	}, 1000);
 }
-send_go5();
 </script>
 
 <div style="clear:both;"></div>
-<div style="height:1200px"></div>
+<!-- <div style="height:1200px"></div> -->
 
 </article>
 <footer>

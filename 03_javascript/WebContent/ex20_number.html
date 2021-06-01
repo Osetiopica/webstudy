@@ -176,38 +176,31 @@ console.log("hi!");
 <article>
 
 <script type="text/javascript">
-test01();
-function test01(){
-	document.write("펑션");
-}
-test01();
-var fn=function test01(){
-	document.write("펑션");
-}
-fn();
+document.write(0.2+0.1+"<br/>");
+var a=2, s=3;
+document.write(a.toString()+s+"<br/>");
+a=123.456;
+document.write(a.toFixed(1)+"<br/>");
+document.write((a/10).toFixed()*10+"<hr/>");
 
-function send_go3() {
-	setTimeout(function fn() {
-		alert("hi");
-	}, 2000);
-}
-function send_go4() {
-	setTimeout(() => {
-		alert("hi");
-	}, 2000);
-}
-function send_go5() {
-	var c=0;
-	setInterval(() => {
-		if(c<=10){
-			document.write("hi<br/>");
-		}else{
-			clearInterval(send_go5);
-		}
-		c++;
-	}, 200);
-}
-send_go5();
+document.write(true+1+"<br/>");
+document.write(true-1+"<br/>");
+document.write(Number(true)-1+"<br/>");
+document.write(parseInt(true)-1+"<br/>");
+document.write(parseFloat(true)-1+"<hr/>");
+
+document.write(Number("22")+3+"<br/>");
+document.write(Number("22.22")+3+"<br/>");
+document.write(parseInt("22")+3+"<br/>");
+document.write(parseInt("22.22")+3+"<br/>");
+document.write(parseFloat("22")+3+"<br/>");
+document.write(parseFloat("22.22")+3+"<hr/>");
+
+document.write(Number("a22")+3+"<br/>");
+document.write(parseInt("a22")+3+"<br/>");
+document.write(parseFloat("a22")+3+"<br/>");
+a="444";
+
 </script>
 
 <div style="clear:both;"></div>
