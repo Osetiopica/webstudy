@@ -131,12 +131,18 @@ footer div{
 
 </style>
 <script>
-function show_all() {
-	document.getElementsByClassName('all-content')[0].style.display = 'block';
-	document.getElementsByClassName('close-all')[0].style.display = 'block';
+var c=2;
+function show_all(sa) {
+	if(c%2==0){
+		document.getElementsByClassName('all-content')[0].style.display = 'block';
+	}else{
+		document.getElementsByClassName('all-content')[0].style.display = 'none';
+	}
+	c++;
+	/* document.getElementsByClassName('close-all')[0].style.display = 'block'; */
 }
 function hide_all(){
-    	document.getElementsByClassName('all-content')[0].style.display = 'none';
+    document.getElementsByClassName('all-content')[0].style.display = 'none';
 	document.getElementsByClassName('close-all')[0].style.display = 'none';
 }
 console.log("hi!");
@@ -152,7 +158,7 @@ console.log("hi!");
 <section>
 <ul>
   <li>
-    <a onclick="show_all();" href="javascript:void(0)" class="dropbtn">전체 메뉴</a>
+    <a onclick="show_all(this);" href="javascript:void(0)" class="dropbtn">전체 메뉴</a>
     <span class="close-all" onclick="hide_all();">전체메뉴닫기</span>
     <div class="all-content">
       <a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><a href="#">Link 1</a><br/>
